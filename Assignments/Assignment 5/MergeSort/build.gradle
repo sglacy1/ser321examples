@@ -22,3 +22,33 @@ task Starter(type: JavaExec) {
   main = 'mergeSort.MergeSort'
   standardInput = System.in
 }
+
+task MoreNodes(type: JavaExec) {
+  group 'simple'
+  description 'Test with more nodes added'
+
+  classpath = sourceSets.main.runtimeClasspath
+
+  main = 'mergeSort.MergeSortMoreNodes'
+  standardInput = System.in
+}
+
+task LessNodes(type: JavaExec) {
+  group 'simple'
+  description 'Test with more nodes added'
+
+  classpath = sourceSets.main.runtimeClasspath
+
+  main = 'mergeSort.MergeSortLessNodes'
+  standardInput = System.in
+}
+
+task OneNode(type: JavaExec) {
+  group 'simple'
+  description 'Test with more nodes added'
+
+  classpath = sourceSets.main.runtimeClasspath
+
+  main = 'mergeSort.MergeSortOneNode'
+  standardInput = System.in
+}
